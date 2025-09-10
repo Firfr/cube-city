@@ -1,0 +1,114 @@
+{
+  "topbar": {
+    "credits": "Credits",
+    "population": "Population",
+    "territory": "Territory",
+    "power": "Power",
+    "level": "Lv",
+    "day": "Day",
+    "music": {
+      "playMusic": "Play Music",
+      "pauseMusic": "Pause Music",
+      "nextTrack": "Next Track",
+      "volumeControl": "Volume Control",
+      "musicSettings": "Music Settings"
+    }
+  },
+  "buildingSidebar": {
+    "constructionUnits": "Construction Units",
+    "operationMode": "Operation Mode",
+    "select": "Select",
+    "build": "Build",
+    "relocate": "Relocate",
+    "demolish": "Demolish",
+    "switchToBuildMode": "Please switch to build mode"
+  },
+  "dashboardFooter": {
+    "cityMetrics": "City Metrics",
+    "buildings": "Buildings",
+    "dailyIncome": "Daily Income",
+    "efficiency": "Pollution",
+    "stability": "Stability",
+    "achievements": "Achievements",
+    "firstFactory": "First Factory",
+    "industrialTycoon": "Industrial Tycoon",
+    "viewAllAchievements": "View All Achievements",
+    "achievementLoading": "Achievement system loading...",
+    "systemStatus": "System Status",
+    "powerGrid": "Power Grid",
+    "transport": "Transport",
+    "security": "Security",
+    "environment": "Environment",
+    "limited": "Limited",
+    "secure": "Secure",
+    "moderate": "Moderate",
+    "online": "Online"
+  },
+  "modeIndicator": {
+    "mode": "Mode"
+  },
+  "selectedIndicator": {
+    "selected": "Selected"
+  },
+  "toastContainer": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info"
+  },
+  "buildingDetails": {
+    "unitDetails": "Unit Details",
+    "selectABuilding": "Select a building",
+    "clickToView": "Click on any structure to view details",
+    "status": "Status",
+    "operational": "Operational",
+    "production": "Production",
+    "outputPerHour": "Output/Hour",
+    "workers": "Workers",
+    "maintenance": "Maintenance",
+    "condition": "Condition",
+    "nextService": "Next Service",
+    "upgradeUnit": "Upgrade Unit",
+    "maintenanceBtn": "Maintenance",
+    "demolish": "Demolish",
+    "tile": "Tile Position",
+    "coinOutput": "Coin Output",
+    "powerUsage": "Power Usage",
+    "powerOutput": "Power Output",
+    "maxPopulation": "Max Population",
+    "pollution": "Pollution",
+    "cost": "Build Cost",
+    "displayName": "Level Name",
+    "category": "Category",
+    "upgradeCost": "Upgrade Cost",
+    "nextLevel": "Next Level",
+    "upgradeInfo": "Upgrade Info",
+    "currentLevel": "Current Level",
+    "improvements": "Improvements",
+    "maxLevel": "Max Level Reached"
+  },
+  "confirmDialog": {
+    "title": "Confirm",
+    "message": "Are you sure you want to demolish this building?",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "common": {
+    "cancel": "Cancel"
+  },
+  "dialog": {
+    "selectTitle": "Upgrade Building",
+    "selectMessage": "Are you sure to upgrade <span class=\"text-green-500 font-bold\"> {building} </span>? It will cost <span class=\"text-yellow-500 font-bold\"> {cost} </span> credits.",
+    "selectConfirm": "Confirm Upgrade",
+    "relocateTitle": "Relocate Building",
+    "relocateMessage": "Are you sure to relocate <span class=\"text-industrial-accent font-bold\"> {building} </span>?",
+    "relocateConfirm": "Confirm Relocation",
+    "demolishTitle": "Demolish Building",
+    "demolishMessage": "Are you sure to demolish <span class=\"text-industrial-accent font-bold\"> {building} </span>? You will get <span class=\"text-yellow-500 font-bold\"> {refund} </span> credits back.",
+    "demolishConfirm": "Confirm Demolition",
+    "building": "building"
+  },
+  "error": {
+    "insufficientFunds": "Insufficient funds"
+  }
+}

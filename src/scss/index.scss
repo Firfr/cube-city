@@ -1,0 +1,148 @@
+/* 工业城市模拟器 - 控制面板 样式迁移自 index.html <style> 标签 */
+
+// 定义变量
+$primary-color: #ff6b35;
+$background-dark: #1a1a1a;
+$background-light: #2d2d2d;
+$border-color: #404040;
+$hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+.industrial-panel {
+    background: linear-gradient(145deg, $background-light, $background-dark);
+    border: 1px solid $border-color;
+}
+
+.industrial-button {
+    background: linear-gradient(145deg, #404040, $background-light);
+    border: 1px solid #555;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: linear-gradient(145deg, #4a4a4a, #333);
+        transform: translateY(-1px);
+        box-shadow: $hover-shadow;
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.building-card-industrial {
+    background: linear-gradient(145deg, #333, $background-dark);
+    border: 1px solid #555;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: linear-gradient(145deg, #404040, $background-light);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    &.selected {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px $primary-color;
+    }
+}
+
+.resource-display {
+    background: linear-gradient(145deg, $background-dark, #0d0d0d);
+    border: 1px solid #333;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.status-online { background-color: #00d084; }
+.status-warning { background-color: #ffb800; }
+.status-error { background-color: #ff4757; }
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.industrial-grid {
+    background-image: 
+        linear-gradient(rgba(64, 64, 64, 0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(64, 64, 64, 0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.neon-text {
+    text-shadow: 0 0 3px currentColor, 0 0 6px currentColor;
+}
+
+.dashboard-card {
+    background: linear-gradient(145deg, $background-light, $background-dark);
+    border: 1px solid $border-color;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, $primary-color, transparent);
+    }
+}
+
+// 全局滚动条样式
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3b3b3b #18181b;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    background: #18181b;
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3b3b3b 60%, #ffb800 100%);
+    border-radius: 8px;
+    min-height: 24px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #ffb800 60%, #3b3b3b 100%);
+}
+
+*::-webkit-scrollbar-corner {
+    background: #18181b;
+}
+
+// 保持原有的 custom-scrollbar 类，以防需要特殊样式
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #3b3b3b #18181b;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    background: #18181b;
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3b3b3b 60%, #ffb800 100%);
+    border-radius: 8px;
+    min-height: 24px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #ffb800 60%, #3b3b3b 100%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+    background: #18181b;
+}

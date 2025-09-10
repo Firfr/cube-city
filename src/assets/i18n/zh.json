@@ -1,0 +1,108 @@
+{
+  "topbar": {
+    "credits": "金币",
+    "population": "人口",
+    "territory": "地皮",
+    "power": "电力",
+    "level": "等级",
+    "online": "在线",
+    "day": "天数",
+    "music": {
+      "playMusic": "播放音乐",
+      "pauseMusic": "暂停音乐",
+      "nextTrack": "下一首",
+      "volumeControl": "音量控制",
+      "musicSettings": "音乐设置"
+    }
+  },
+  "buildingSidebar": {
+    "constructionUnits": "建造单位",
+    "operationMode": "操作模式",
+    "select": "选择",
+    "build": "建造",
+    "relocate": "搬迁",
+    "demolish": "拆除",
+    "switchToBuildMode": "请切换到建造模式"
+  },
+  "dashboardFooter": {
+    "cityMetrics": "城市指标",
+    "buildings": "建筑数",
+    "dailyIncome": "每日收入",
+    "efficiency": "污染指数",
+    "stability": "稳定性",
+    "achievements": "成就系统",
+    "firstFactory": "第一座工厂",
+    "industrialTycoon": "工业大亨",
+    "viewAllAchievements": "查看全部成就",
+    "achievementLoading": "成就系统加载中……",
+    "systemStatus": "系统状态",
+    "powerGrid": "电网",
+    "transport": "交通",
+    "security": "安全",
+    "environment": "环境",
+    "limited": "受限",
+    "secure": "安全",
+    "moderate": "适中",
+    "online": "在线"
+  },
+  "modeIndicator": {
+    "mode": "模式"
+  },
+  "selectedIndicator": {
+    "selected": "已选中"
+  },
+  "toastContainer": {
+    "success": "成功",
+    "error": "错误",
+    "warning": "警告",
+    "info": "信息"
+  },
+  "buildingDetails": {
+    "unitDetails": "单位详情",
+    "selectABuilding": "请选择一个建筑",
+    "clickToView": "点击任意建筑查看详情",
+    "status": "状态",
+    "operational": "运行中",
+    "production": "产出",
+    "outputPerHour": "每小时产出",
+    "workers": "工人",
+    "maintenance": "维护",
+    "condition": "状况",
+    "nextService": "下次维护",
+    "upgradeUnit": "升级单位",
+    "maintenanceBtn": "维护",
+    "demolish": "拆除",
+    "tile": "地皮位置",
+    "coinOutput": "金币产出",
+    "powerUsage": "用电量",
+    "powerOutput": "发电量",
+    "maxPopulation": "最大人口",
+    "pollution": "污染",
+    "cost": "建造花费",
+    "displayName": "等级名称",
+    "category": "分类",
+    "upgradeCost": "升级消耗",
+    "nextLevel": "下一级"
+  },
+  "confirmDialog": {
+    "title": "确认操作",
+    "message": "确定要拆除这个建筑吗？此操作不可撤销！",
+    "confirm": "确认拆除",
+    "cancel": "取消"
+  },
+  "common": {
+    "cancel": "取消"
+  },
+  "dialog": {
+    "selectTitle": "升级建筑",
+    "selectMessage": "确定要升级 <span class=\"text-[#ff4402] font-bold\"> {building} </span>? 升级将花费 {cost} 金币。",
+    "selectConfirm": "确认升级",
+    "relocateTitle": "搬迁建筑",
+    "relocateMessage": "确定要搬迁 <span class=\"text-[#ff4402] font-bold\"> {building} </span>?",
+    "relocateConfirm": "确认搬迁",
+    "demolishTitle": "拆除建筑",
+    "demolishMessage": "确定要拆除 <span class=\"text-[#ff4402] font-bold\"> {building} </span>? 拆除后将获得 {refund} 金币。",
+    "demolishConfirm": "确认拆除",
+    "building": "建筑"
+  }
+}
