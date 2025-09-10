@@ -6,23 +6,23 @@ const props = defineProps({
   show: Boolean,
   title: {
     type: String,
-    default: 'Title',
+    default: '标题',
   },
   message: {
     type: String,
-    default: 'No message',
+    default: '无消息',
   },
   confirmText: {
     type: String,
-    default: 'Confirm',
+    default: '确定',
   },
   cancelText: {
     type: String,
-    default: 'Cancel',
+    default: '取消',
   },
   action: {
     type: String,
-    default: 'select',
+    default: '选择',
   },
 })
 

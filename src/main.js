@@ -12,8 +12,8 @@ import './scss/index.scss'
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
-  fallbackLocale: 'en',
+  locale: 'zh',
+  fallbackLocale: 'zh',
   messages: { zh, en },
 })
 
@@ -29,6 +29,6 @@ const gameState = useGameState()
 watch(
   () => gameState.language,
   (lang) => {
-    i18n.global.locale.value = lang
+    i18n.global.locale.value = 'zh'
   },
 )

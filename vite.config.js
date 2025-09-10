@@ -11,6 +11,7 @@ const HOST = _config.server.host
 const PORT = _config.server.port
 
 export default {
+  base: './', // 使用相对路径
   server: {
     host: HOST,
     port: PORT,

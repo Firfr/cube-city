@@ -148,10 +148,10 @@ const upgradeImprovements = computed(() => {
       <!-- 升级信息区块 -->
       <div v-if="currentMode === 'select'" class="resource-display rounded p-3">
         <div class="text-sm text-gray-400 uppercase tracking-wide mb-2">
-          {{ t('buildingDetails.upgradeInfo') }}
+          升级信息
         </div>
         <div class="flex justify-between">
-          <span class="text-sm text-gray-300">{{ t('buildingDetails.currentLevel') }}:</span>
+          <span class="text-sm text-gray-300">当前等级:</span>
           <span class="text-sm font-bold text-industrial-yellow">Lv. {{ building.level }}</span>
         </div>
 
@@ -168,7 +168,7 @@ const upgradeImprovements = computed(() => {
           <!-- Improvements -->
           <div v-if="upgradeImprovements.length > 0" class="mt-2 pt-2 border-t border-gray-700">
             <div class="text-sm text-gray-400 uppercase tracking-wide mb-1">
-              {{ t('buildingDetails.improvements') }}
+              改进项
             </div>
             <div v-for="item in upgradeImprovements" :key="item.label" class="flex justify-between my-1">
               <span class="text-sm text-gray-300">{{ item.label }}:</span>
@@ -179,7 +179,7 @@ const upgradeImprovements = computed(() => {
           </div>
         </div>
         <div v-else class="mt-1">
-          <span class="text-sm text-gray-400">{{ t('buildingDetails.maxLevel') }}</span>
+          <span class="text-sm text-gray-400">最高等级</span>
         </div>
       </div>
       <!-- 建筑所在 Tile 位置 区块 -->

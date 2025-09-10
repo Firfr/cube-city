@@ -37,7 +37,7 @@ function setMode(mode) {
     return
   gameState.setMode(mode)
   gameState.setSelectedBuilding(null)
-  gameState.addToast(`MODE : ${mode.toUpperCase()} CHANGE`, 'info')
+  gameState.addToast(`模式：切换到 ${mode_zhNames[mode] || mode}`, 'info')
 }
 
 // 键盘快捷键映射
@@ -46,6 +46,14 @@ const modeKeyMap = {
   r: 'relocate',
   b: 'build',
   s: 'select',
+}
+
+// 添加中文模式名称映射
+const mode_zhNames = {
+  build: '建造',
+  demolish: '拆除',
+  relocate: '搬迁',
+  select: '选择'
 }
 
 function handleKeydown(e) {

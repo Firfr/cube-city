@@ -62,18 +62,18 @@ function onReject() {
   <div v-if="show" class="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-40">
     <div class="bg-industrial-panel bg-black bg-opacity-70 rounded-xl shadow-industrial p-6 w-[90vw] max-w-lg mx-auto text-center">
       <h3 class="text-xl font-bold text-industrial-accent uppercase tracking-wide mb-2">
-        Continue Last Game?
+        继续上一局游戏吗？
       </h3>
       <p class="text-lg text-gray-400 mb-4">
-        Previous game save detected. Would you like to continue?
+        检测到上一次的游戏存档，您想继续吗？
       </p>
 
       <div class="flex flex-col gap-3">
         <button class="industrial-button w-full text-white font-bold py-3 px-4 text-sm uppercase tracking-wide" @click="onAccept">
-          Yes, Continue Last Game
+          是的，继续上一局游戏
         </button>
         <button class=" w-full text-white font-bold py-3 px-4 text-sm uppercase tracking-wide bg-industrial-red hover:bg-red-700" @click="onReject">
-          No, Start New Game
+          不，开始新游戏
         </button>
       </div>
 
@@ -86,7 +86,7 @@ function onReject() {
           class="w-4 h-4 text-industrial-blue bg-gray-700 border-gray-600 rounded focus:ring-industrial-blue focus:ring-2"
         >
         <span class="text-white/60 font-medium">
-          🎵 {{ locale === 'zh' ? '点击右上角音乐按钮 ' : 'Click the music button in the top right corner' }}
+          🎵 {{ locale === 'zh' ? '点击右上角音乐按钮(没有声音，重新关闭在打开)' : 'Click the music button in the top right corner' }}
         </span>
       </label>
       <!-- GPU加速提示 -->

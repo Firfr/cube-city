@@ -6,10 +6,10 @@ import { useGameState } from '../stores/useGameState'
 const gameState = useGameState()
 const modeLabel = computed(() => {
   switch (gameState.currentMode) {
-    case 'build': return 'BUILD'
-    case 'relocate': return 'RELOCATE'
-    case 'demolish': return 'DEMOLISH'
-    case 'select': return 'SELECT'
+    case 'build': return '建造'
+    case 'relocate': return '搬迁'
+    case 'demolish': return '拆除'
+    case 'select': return '选择'
     default: return gameState.currentMode?.toUpperCase() || 'UNKNOWN'
   }
 })
@@ -49,7 +49,7 @@ watch(() => gameState.currentMode, (newVal, oldVal) => {
 
 <template>
   <div class="absolute top-4 left-4 resource-display rounded px-3 py-1">
-    <span class="text-xs text-gray-400 uppercase tracking-wide">MODE:</span>
+    <span class="text-xs text-gray-400 uppercase tracking-wide">模式：</span>
     <span
       ref="modeSpan"
       class="text-sm font-bold ml-2 transition-colors duration-200"

@@ -53,7 +53,7 @@ export function useBuilding() {
   const getDialogConfig = (action, buildingType, level = 1) => {
     let buildingLevel = resolveBuildingLevel(action, buildingType, level)
     if (action === 'upgrade' && !buildingLevel) {
-      gameState.addToast(t('error.noNextLevel'), 'error')
+      gameState.addToast('没有下一个等级', 'error')
       return null
     }
     const buildingName = `${BUILDING_DATA[buildingType]?.levels[buildingLevel]?.displayName?.[locale.value]} Lv.${buildingLevel}`
@@ -105,7 +105,7 @@ export function useBuilding() {
   // 处理建筑操作的金额变动
   const handleBuildingTransaction = (action, buildingType, level = 1) => {
     if (!canAffordOperation(action, buildingType, level)) {
-      gameState.addToast(t('error.insufficientFunds'), 'error')
+      gameState.addToast('资金不足', 'error')
       return false
     }
     switch (action) {

@@ -22,16 +22,16 @@ const _props = defineProps({
             <div class="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full animate-ping" />
           </div>
           <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wider">
-            Selection Mode
+            选择模式
           </h3>
           <div class="space-y-3">
             <p class="text-slate-300 text-sm leading-relaxed">
-              Click any building in the scene to view detailed information and statistics
+              点击场景中的任意建筑物查看详细信息和统计数据
             </p>
             <div class="bg-slate-800/50 backdrop-blur-sm rounded-lg p-3 border border-slate-700">
               <div class="flex items-center justify-center space-x-2 text-xs text-slate-400">
                 <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-                <span>Ready to inspect buildings</span>
+                <span>准备检查建筑物</span>
               </div>
             </div>
           </div>
@@ -47,11 +47,11 @@ const _props = defineProps({
             <div class="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full animate-ping" />
           </div>
           <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wider">
-            Build Mode
+            建造模式
           </h3>
           <div class="space-y-4">
             <p class="text-slate-300 text-sm leading-relaxed">
-              Select a building type from the sidebar, then click on any empty tile to construct it
+              从侧边栏选择一种建筑类型，然后点击任意空地砖来建造它
             </p>
             <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-lg p-4 border border-yellow-500/30">
               <div class="flex items-start space-x-3">
@@ -62,10 +62,10 @@ const _props = defineProps({
                 </div>
                 <div class="text-left">
                   <p class="text-yellow-200 text-xs font-medium uppercase tracking-wide mb-1">
-                    Strategic Tip
+                    策略提示
                   </p>
                   <p class="text-yellow-100 text-xs leading-relaxed">
-                    Power supply, environmental factors, and resident satisfaction directly impact population growth and coin production
+                    电力供应、环境因素和居民满意度直接影响人口增长和金币产出
                   </p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const _props = defineProps({
             <!-- 新增贴士 提醒用户可通过左右方向键调整东南西北方向 -->
             <div class="bg-slate-800/50 backdrop-blur-sm rounded-lg p-3 border border-slate-700">
               <p class="text-slate-300 text-sm">
-                Press <kbd class="px-1.5 py-0.5 bg-blue-500 text-white rounded text-xs font-bold">←</kbd> or <kbd class="px-1.5 py-0.5 bg-blue-500 text-white rounded text-xs font-bold">→</kbd> to adjust the direction of the camera
+                按下 <kbd class="px-1.5 py-0.5 bg-blue-500 text-white rounded text-xs font-bold">←</kbd> 或 <kbd class="px-1.5 py-0.5 bg-blue-500 text-white rounded text-xs font-bold">→</kbd> 调整视角
               </p>
             </div>
           </div>
@@ -89,21 +89,21 @@ const _props = defineProps({
             <div class="absolute -top-1 -right-1 w-4 h-4 bg-cyan-400 rounded-full animate-ping" />
           </div>
           <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wider">
-            Relocation Mode
+            搬迁模式
           </h3>
           <div class="space-y-4">
             <div class="space-y-3">
               <div class="bg-slate-800/50 backdrop-blur-sm rounded-lg p-3 border border-slate-700">
                 <div class="flex items-center space-x-2 text-sm text-slate-200">
                   <kbd class="px-2 py-1 bg-slate-700 rounded text-xs font-mono">R</kbd>
-                  <span>Rotate selected building</span>
+                  <span>旋转选中的建筑物</span>
                 </div>
               </div>
               <div class="bg-slate-800/50 backdrop-blur-sm rounded-lg p-3 border border-slate-700">
                 <p class="text-slate-300 text-sm">
-                  Click tile <span class="px-1.5 py-0.5 bg-blue-500 text-white rounded text-xs font-bold">A</span>
-                  then tile <span class="px-1.5 py-0.5 bg-green-500 text-white rounded text-xs font-bold">B</span>
-                  to relocate building
+                  点击地砖 <span class="px-1.5 py-0.5 bg-blue-500 text-white rounded text-xs font-bold">A</span>
+                  然后点击地砖 <span class="px-1.5 py-0.5 bg-green-500 text-white rounded text-xs font-bold">B</span>
+                  来搬迁建筑物
                 </p>
               </div>
             </div>
@@ -114,11 +114,11 @@ const _props = defineProps({
                 </svg>
                 <div class="text-left">
                   <p class="text-red-200 text-xs">
-                    Tile <span class="font-bold">A</span> must have a building<br>
-                    Tile <span class="font-bold">B</span> must be empty
+                    地砖 <span class="font-bold">A</span> 必须有建筑物<br>
+                    地砖 <span class="font-bold">B</span> 必须是空的
                   </p>
                   <p class="text-red-300 text-xs mt-2">
-                    Press <kbd class="px-1 py-0.5 bg-red-700 rounded text-xs">ESC</kbd> to cancel
+                    按下 <kbd class="px-1 py-0.5 bg-red-700 rounded text-xs">ESC</kbd> 取消
                   </p>
                 </div>
               </div>
@@ -136,11 +136,11 @@ const _props = defineProps({
             <div class="absolute -top-1 -right-1 w-4 h-4 bg-red-400 rounded-full animate-ping" />
           </div>
           <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wider">
-            Demolition Mode
+            拆除模式
           </h3>
           <div class="space-y-4">
             <p class="text-slate-300 text-sm leading-relaxed">
-              Click on any building in the scene to demolish it permanently
+              点击场景中的任意建筑物将其永久拆除
             </p>
             <div class="bg-green-500/20 backdrop-blur-sm rounded-lg p-4 border border-green-500/30">
               <div class="flex items-center space-x-3">
@@ -152,10 +152,10 @@ const _props = defineProps({
                 </div>
                 <div class="text-left">
                   <p class="text-green-200 text-xs font-medium uppercase tracking-wide mb-1">
-                    Material Recovery
+                    材料回收
                   </p>
                   <p class="text-green-100 text-xs">
-                    70% of construction materials will be refunded to your inventory
+                    70% 的建筑材料将退还到您的库存中
                   </p>
                 </div>
               </div>

@@ -23,9 +23,9 @@ export const useGameState = defineStore('gameState', {
     // 城市属性
     territory: 16,
     cityLevel: 1,
-    cityName: 'HeXian City',
+    cityName: '我的城市',
     citySize: 16,
-    language: 'en',
+    language: 'zh',
     showMapOverview: false,
 
     // 音乐系统状态
@@ -306,9 +306,9 @@ export const useGameState = defineStore('gameState', {
       this.credits = 3000
       this.territory = 16
       this.cityLevel = 1
-      this.cityName = 'HeXian City'
+      this.cityName = '我的城市'
       this.citySize = 16
-      this.language = 'en'
+      this.language = 'zh'
       this.showMapOverview = false
       this.stability = 100
       this.stabilityChangeRate = 0

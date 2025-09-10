@@ -10,7 +10,7 @@ const { musicEnabled, musicVolume } = storeToRefs(gameState)
 const audioRef = ref(null)
 
 // 播放列表
-const playlist = ['/audio/song01.mp3', '/audio/song02.mp3']
+const playlist = ['audio/song01.mp3', 'audio/song02.mp3']
 let currentIndex = 0
 
 // 初始化
