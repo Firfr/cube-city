@@ -29,5 +29,5 @@ CMD [ "-p", "5141" ]
 # 暴露端口
 EXPOSE 5141
 
-# docker build -t firfe/cube-city:2025.09.10 .
-
+# docker buildx build --platform linux/amd64 --tag firfe/cube-city:2025.09.10 --load .
+# docker buildx build --platform linux/arm64 --tag firfe/cube-city:2025.09.10-arm64 --load .

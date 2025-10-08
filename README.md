@@ -35,9 +35,14 @@ Welcome to CubeCity! This is a cartoon-style 2.5D city simulation game where you
 
 容器内部端口`5141`，可通过设置启动参数来指定监听端口。
 
-```bash
-swr.cn-north-4.myhuaweicloud.com/firfe/cube-city:2025.09.10
-```
+- AMD64镜像
+  ```bash
+  swr.cn-north-4.myhuaweicloud.com/firfe/cube-city:2025.09.10
+  ```
+- ARM64镜像
+  ```bash
+  swr.cn-north-4.myhuaweicloud.com/firfe/cube-city:2025.09.10-arm64
+  ```
 
 ### docker run 命令部署
 
